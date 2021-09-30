@@ -31,5 +31,5 @@ while(operacion != "ESC"){
         alert("OPERACION NO ENCONTRADA")
     }
 
-
+    operacion = prompt("Ingrese una operacion dentro del bucle");
 }
