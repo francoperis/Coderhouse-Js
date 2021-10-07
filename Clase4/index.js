@@ -95,6 +95,7 @@ function verificar(edad) {
         supervisado=prompt("VINO CON ALGUN FAMILIAR O TUTOR ? RESPONDA SI o NO")
         if (supervisado.toLowerCase()=== "si"){
             alert("Bienvenido !")
+            return supervisado
             
         }
         else {
@@ -107,7 +108,7 @@ function verificar(edad) {
 function cantidadEntrada (entrada) {
     if (edad => 13 || supervisado == "si"){
         numeroEntrada=parseInt(prompt(" INGRESE NUMERO DE ENTRADAS QUE DESEA "))
-        if(numeroEntrada => 2 && numeroEntrada < 4){
+        if(numeroEntrada >= 2 && numeroEntrada < 4){
             alert(" TIENE UN 10% DE DESCUENTO EN SU COMPRA")
         }
         else if(numeroEntrada => 4 ){
