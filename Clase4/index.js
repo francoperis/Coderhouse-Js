@@ -111,7 +111,7 @@ function cantidadEntrada (entrada) {
         if(numeroEntrada >= 2 && numeroEntrada < 4){
             alert(" TIENE UN 10% DE DESCUENTO EN SU COMPRA")
         }
-        else if(numeroEntrada => 4 ){
+        else if(numeroEntrada >= 4 ){
             alert(" TIENE UN 20% DE DESCUENTO EN SU COMPRA")
         }
         else{
