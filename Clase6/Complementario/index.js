@@ -37,34 +37,34 @@ function Principal() {
     while (opcionUsuario != 0){
 
         switch(opcionUsuario){
-        case "1": 
-        alert("Agregaste el producto: " + ArrayProductos[0].nombreProducto)
+        case 1: 
+        alert("Agregaste el producto: " + ArrayProductos[0].nombre)
         agregarProducto(ArrayProductos[0]); 
         break// le mandamos el objeto producto que esta dentro de la posicion n del arreglo. 
     
    
-        case "2": 
-        alert("Agregaste el producto: " + ArrayProductos[1].nombreProducto)
+        case 2: 
+        alert("Agregaste el producto: " + ArrayProductos[1].nombre)
         agregarProducto(ArrayProductos[1]);
         break
 
-        case "3": 
-        alert("Agregaste el producto: " + ArrayProductos[2].nombreProducto)
+        case 3: 
+        alert("Agregaste el producto: " + ArrayProductos[2].nombre)
         agregarProducto(ArrayProductos[2]);
         break
 
-        case "4": 
-        alert("Agregaste el producto: " + ArrayProductos[3].nombreProducto)
+        case 4: 
+        alert("Agregaste el producto: " + ArrayProductos[3].nombre)
         agregarProducto(ArrayProductos[3]);
         break
 
-        case "5": 
-        alert("Agregaste el producto: " + ArrayProductos[4].nombreProducto)
+        case 5: 
+        alert("Agregaste el producto: " + ArrayProductos[4].nombre)
         agregarProducto(ArrayProductos[4]);
         break
 
-        case "6": 
-        alert("Agregaste el producto: " + ArrayProductos[5].nombreProducto)
+        case 6: 
+        alert("Agregaste el producto: " + ArrayProductos[5].nombre)
         agregarProducto(ArrayProductos[5]);
         break
 
