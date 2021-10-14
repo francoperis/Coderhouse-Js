@@ -101,6 +101,10 @@ function agregarProducto(Producto){
 
 }
 
-
+console.log(ArrayProductos.sort(function(prev,next){
+    return prev.PrecioProducto - next.PrecioProducto;
+}));
+console.log("Tus productos se ordenaran segun su precio: ");
 
 Principal();
+
