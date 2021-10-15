@@ -16,16 +16,16 @@ class Producto{ // creamos la clase producto y  agregamos los objetos.
 
 
 // instanciamos los objetos, y los pasamos como parametros. 
-let Producto1 = new Producto(001, "Torta Cheesecake oreo", 4000, 8);
-let Producto2 = new Producto(002, "Torta marquisse de chocolate", 5500, 5);
-let Producto3 = new Producto(003, "torta lemon pie ", 4500, 7);
-let Producto4 = new Producto(004, "torta Carrot-Cake ", 4500, 3);
-let Producto5 = new Producto(005, "torta Choco-torta ", 4500, 10);
-let Producto6 = new Producto(006, "torta cheesecake frutos rojos", 4500, 9);
+let Producto1 = new Producto(001, "Torta Cheesecake oreo", 500, 8);
+let Producto2 = new Producto(002, "Torta marquisse de chocolate", 550, 5);
+let Producto3 = new Producto(003, "torta lemon pie ", 450, 7);
+let Producto4 = new Producto(004, "torta Carrot-Cake ", 600, 3);
+let Producto5 = new Producto(005, "torta Choco-torta ", 1000, 10);
+let Producto6 = new Producto(006, "torta cheesecake frutos rojos", 1000, 9);
 
 let ArrayProductos = [Producto1,Producto2,Producto3,Producto4,Producto5,Producto6]; // creamos/ inicializamos  el arreglo. 
 
-console.log(ArrayProductos);
+
 
 
 let Carrito = []; // creamos otro arreglo para el carrito. 
@@ -101,10 +101,26 @@ function agregarProducto(Producto){
 
 }
 
-console.log(ArrayProductos.sort(function(prev,next){
+ArrayProductos.sort((a, b) => {
+    if (a.PrecioProducto < b.PrecioProducto){
+        return 1
+    }
+    else if (a.PrecioProducto > b.PrecioProducto){
+        return -1
+    }
+    return 0
+})
+    
+
+
+
+console.log( ArrayProductos)
+Principal();
+
+/*console.log(ArrayProductos.sort(function(prev,next){
     return prev.PrecioProducto - next.PrecioProducto;
 }));
 console.log("Tus productos se ordenaran segun su precio: ");
+*/
 
-Principal();
 
